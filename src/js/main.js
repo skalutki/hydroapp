@@ -3,20 +3,28 @@
 // service worker registration - remove if you're not going to use it
 
 if ('serviceWorker' in navigator) {
-  window.addEventListener('load', function() {
-    navigator.serviceWorker.register('serviceworker.js').then(function(registration) {
-      // Registration was successful
-      console.log('ServiceWorker registration successful with scope: ', registration.scope);
-    }, function(err) {
-      // registration failed :(
-      console.log('ServiceWorker registration failed: ', err);
+    window.addEventListener('load', function() {
+        navigator.serviceWorker.register('serviceworker.js').then(function(registration) {
+            // Registration was successful
+            console.log('ServiceWorker registration successful with scope: ', registration.scope);
+        }, function(err) {
+            // registration failed :(
+            console.log('ServiceWorker registration failed: ', err);
+        });
     });
-  });
 }
 
 // place your code below
 
 
-console.log(`Hello world!`);
+const counter = document.querySelector(".form__glass__counter--js");
 
+const addButton = document.querySelector(".form__button__add--js");
 
+const subtractButton = document.querySelector(".form__button__subtract--js");
+
+console.log(counter);
+
+console.log(addButton);
+
+console.log(subtractButton);
