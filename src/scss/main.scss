@@ -4,6 +4,7 @@
 html {
     box-sizing: border-box;
     font-family: 'Roboto';
+    background: $background;
 }
 
 *,
@@ -14,7 +15,6 @@ html {
 
 body {
     color: $black;
-    background: $background;
     display: flex;
     align-items: center;
     justify-content: center;

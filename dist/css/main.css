@@ -311,7 +311,8 @@ template {
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Roboto'; }
+  font-family: 'Roboto';
+  background: #3767AD; }
 
 *,
 *:before,
@@ -321,7 +322,6 @@ html {
 
 body {
   color: #000;
-  background: #3767AD;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
