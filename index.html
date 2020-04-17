@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HydroAPP</title>
+    <meta name="description" content="HydroAPP - to aplikacja pomagająca w zliczaniu wypitej wody w ciągu dnia." />
+
+    <!-- Title -->
+    <meta property="og:title" content="HydroAPP - to aplikacja pomagająca w zliczaniu wypitej wody w ciągu dnia, oraz zapisuje Twoją historię, dzięki czemu jesteś w stanie kontrolować spożycie wody w dłuższym oresie czasu. To działa!" />
+    <!-- OPTIONAL description. 2-4 sentences. -->
+    <meta property="og:description" content="https://skalutki.github.io/hydroapp/" />
+    <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
+    <meta property="og:url" content="https://skalutki.github.io/hydroapp/" />
+    <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630.  Pamiętaj by uzupełnić !!!-->
+    <meta property="og:image" content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png" />
+
+    <link rel="manifest" href="manifest.json" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="apple-touch-icon" sizes="192x192" href="assets/pwa/icons/icon-192x192.png" />
+
+    <link rel="icon" type="image/png" href="assets/pwa/icons/icon-192x192.png" />
+
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+
+    <main class="main">
+        <h1 class="header">HydroAPP</h1>
+        <div class="counter">
+            <span class="counter__value counter__value--js">8</span>
+        </div>
+        <button class="button-add button-add--js" aria-label="Wcisniecie przycisku spowoduje dodanie szklanki. ">dodaj szklankę</button>
+        <button class="button-remove button-remove--js" aria-label="Wcisniecie przycisku spowoduje usunięcie szklanki. ">usuń szklankę</button>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
