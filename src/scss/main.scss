@@ -3,7 +3,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap&subset=latin-ext');
 html {
     box-sizing: border-box;
-    font-family: 'Roboto';
     background: $background;
 }
 
@@ -14,83 +13,62 @@ html {
 }
 
 body {
-    color: $black;
+    color: #ffffff;
+    font-family: Roboto;
+    font-weight: 500;
+    min-height: 100vh;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+}
+
+.button-add {
+    padding: 12px;
+    font-size: 18px;
+    color: #000;
+    border: none;
+    border-radius: 4px;
+    background: #ffffff;
+    min-width: 216px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 48px 0 26px;
+}
+
+.button-remove {
+    background: none;
+    border: none;
+    min-width: 216px;
+    color: $light;
+    padding: 12px;
+    font-size: 14px;
+}
+
+.counter {
+    width: 280px;
+    height: 280px;
+    background: url(../assets/img/water-glass.svg) center center;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    font-size: 112px;
+    &__value {
+        display: block;
+        padding-top: 64px;
+    }
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.main {
-    max-width: 375px;
-    max-height: 812px;
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
-}
-
 .header {
-    font-style: normal;
-    font-weight: 500;
-    color: $light;
-    margin-top: 50px;
-    text-align: center;
-}
-
-.form {
-    margin: 0 auto;
-    &__glass {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        &--svg {
-            position: absolute;
-            width: 280px;
-            height: 280px;
-        }
-        &--counter {
-            font-style: normal;
-            font-weight: 500;
-            font-size: 112px;
-            line-height: 131px;
-            position: relative;
-            top: 20px;
-        }
-    }
-    &__actions {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-    }
-    &__button {
-        &--add {
-            border-radius: 4px;
-            background: #FFFFFF;
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-            margin-bottom: 37px;
-            font-style: normal;
-            font-weight: 500;
-            font-size: 18px;
-            line-height: 21px;
-            width: 216px;
-            height: 47px;
-            width: 216px;
-            height: 47px;
-        }
-        &--subtract {
-            font-style: normal;
-            font-weight: 500;
-            font-size: 14px;
-            line-height: 16px;
-            background: none;
-            border: none;
-            border-radius: 0;
-            color: $light;
-            text-decoration: none;
-            font-display: none;
-            width: 184px;
-            height: 23px;
-        }
-    }
+    font-size: 55px;
+    margin: 0 0 64px 0;
+    padding: 0;
 }

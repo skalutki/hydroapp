@@ -1,8 +1,8 @@
 {
     "name": "HydroAPP",
     "short_name": "HydroAPP",
-    "theme_color": "#2196f3",
-    "background_color": "#3767ad",
+    "theme_color": "#3767AD",
+    "background_color": "#3767AD",
     "display": "standalone",
     "orientation": "portrait",
     "Scope": "/hydroapp/",
