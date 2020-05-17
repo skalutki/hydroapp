@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<title>HydroAPP</title>
+<meta name="description" content="HydroAPP - to aplikacja pomagająca w zliczaniu wypitej wody w ciągu dnia." />
+
+<!-- Title -->
+<meta property="og:title" content="HydroAPP - to aplikacja pomagająca w zliczaniu wypitej wody w ciągu dnia, oraz zapisuje Twoją historię, dzięki czemu jesteś w stanie kontrolować spożycie wody w dłuższym oresie czasu. To działa!" />
+<!-- OPTIONAL description. 2-4 sentences. -->
+<meta property="og:description" content="https://skalutki.github.io/hydroapp/" />
+<!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
+<meta property="og:url" content="https://skalutki.github.io/hydroapp/" />
+<!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630.  Pamiętaj by uzupełnić !!!-->
+<meta property="og:image" content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png" />
+
+<link rel="manifest" href="manifest.json" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<link rel="apple-touch-icon" sizes="192x192" href="assets/pwa/icons/icon-192x192.png" />
+
+<link rel="icon" type="image/png" href="assets/pwa/icons/icon-192x192.png" />
+
+<link rel="stylesheet" href="css/main.css" />
+
+<body>
+    <main>
+        <h1 class="title">Ustawienia</h1>
+        <form class="settings">
+
+
+            <p class="settings__input">
+                <label for="glass">Pojemność szklankiw mililitrach</label>
+                <input list="glass-size" name="glass" id="glass" class="settings__glass">
+
+                <datalist id="glass-size">
+                    <option></option>
+                    <option value="200" aria-label="pojemność szklanki 200 mililitrów.">
+                    <option value="250" aria-label="pojemność szklanki 250 mililitrów.">
+                    <option value="330" aria-label="pojemność szklanki 330 mililitrów.">
+                    <option value="350" aria-label="pojemność szklanki 350 mililitrów.">
+                    <option value="420" aria-label="pojemność szklanki 420 mililitrów.">
+                    <option value="500" aria-label="pojemność szklanki 500 mililitrów.">
+                </datalist>
+            </p>
+
+            <p class="settings__input">
+                <label for="gender">Płeć</label>
+                <input list="gender-list" name="gender" id="gender" class="settings__gender">
+
+                <datalist id="gender-list">
+                    <option></option>
+                    <option value="Kobieta" aria-label="Kobieta.">
+                    <option value="Mężczyzna" aria-label="Mężczyzna.">
+                </datalist>
+            </p>
+
+            <p class="settings__input">
+                <label for="name">Podaj swoje imię</label>
+                <input type="text" name="name" id="name">
+            </p>
+
+            <p class="settings__input">
+                <label for="age">Podaj swój wiek</label>
+                <input type="date" name="age2" id="age2" pattern="^(?:(?:31(\/|-|\.)(?:0?[13578]|1[02]))\1|(?:(?:29|30)(\/|-|\.)(?:0?[13-9]|1[0-2])\2))(?:(?:1[6-9]|[2-9]\d)?\d{2})$|^(?:29(\/|-|\.)0?2\3(?:(?:(?:1[6-9]|[2-9]\d)?(?:0[48]|[2468][048]|[13579][26])|(?:(?:16|[2468][048]|[3579][26])00))))$|^(?:0?[1-9]|1\d|2[0-8])(\/|-|\.)(?:(?:0?[1-9])|(?:1[0-2]))\4(?:(?:1[6-9]|[2-9]\d)?\d{2})$">
+            </p>
+
+            <p class="settings__input">
+                <label for="weight">Ile ważysz?</label>
+                <input type="number" name="weight" id="weight" min="0" max="200">
+            </p>
+
+            <div class="container">
+                <button class="settings__button settings__button--accept form__button__accept--js" aria-label="Wcisniecie przycisku spowoduje zaakceptowanie ustawień. ">Zapisz ustawienia</button>
+            </div>
+        </form>
+
+        <p class="water-demand">Twoje dzienne zapotrzebowanie na wode to: <span class="water-demand--score water-demand__score--js">0</span> </p>
+
+
+        <footer class="footer">Informacje potrzebne do obliczenia zapotrzebowania dziennego na wodę. Propozycja dziennego spożycia jest oparta o uśrednione dane. Nie są to porady lekarskie.</footer>
+    </main>
+
+</body>
+
+</html>

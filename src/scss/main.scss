@@ -1,6 +1,7 @@
 @import "_normalize";
 @import "_variables";
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap&subset=latin-ext');
+@import "modules/settings.scss";
 html {
     box-sizing: border-box;
     font-family: 'Roboto';
@@ -18,6 +19,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    @media (max-width: $mobile) {
+        margin: 0 16px;
+    }
 }
 
 .main {
